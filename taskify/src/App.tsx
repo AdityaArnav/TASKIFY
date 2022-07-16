@@ -1,28 +1,12 @@
 import React from 'react';
 import './App.css';
+import InputFeild from './components/InputFeild';
 
-let name: string;
-let age: number;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number,string];
-
-type Person={
-  name: string;
-  age?: number;
-}
-let person:Person = {
-  name: "Aditya",
-  // age:23
-}
-
-
-
-
-function App() {
+const App:React.FC=()=> {
   return (
     <div className="App">
-     hello world
+     <span className='heading'>Taskify</span>
+     <InputFeild/>
     </div>
   );
 }
